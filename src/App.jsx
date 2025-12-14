@@ -6,7 +6,7 @@ import Navbar from "./Components/Layout/Navbar";
 import Footer from "./Components/Layout/Footer";
 import FloatingActions from "./Components/Layout/FloatingActions";
 import ContactModal from "./Components/Forms/ContactModal";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 
 export default function App() {
   const [openContact, setOpenContact] = useState(false);
