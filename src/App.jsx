@@ -3,8 +3,8 @@ import AppRoutes from "./routes/AppRoutes";
 import { Toaster } from "sonner";
 
 import Navbar from "./Components/Layout/Navbar";
-import Footer from "./components/Layout/Footer";
-import FloatingActions from "./components/Layout/FloatingActions";
+import Footer from "./Components/Layout/Footer";
+import FloatingActions from "./Components/Layout/FloatingActions";
 import ContactModal from "./Components/Forms/ContactModal";
 import ScrollToTop from "./components/ScrollToTop";
 
