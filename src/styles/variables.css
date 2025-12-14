@@ -1,0 +1,10 @@
+:root {
+    --brand-blue: #0056d6;
+    --brand-navy: #02204c;
+    --brand-light: #f4f7fb;
+    --accent-gold: #f7a800;
+    --text-dark: #1f2a37;
+    --text-muted: #5f6b7a;
+    --shadow-soft: 0 20px 45px rgba(2, 32, 76, 0.12);
+    --radius-lg: 24px;
+  }

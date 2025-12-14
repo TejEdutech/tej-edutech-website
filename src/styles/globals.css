@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   GLOBAL RESETS & BASE STYLES
+================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800 font-sans antialiased;
+}
+
+/* Fix for fixed navbar spacing */
+.page-wrapper {
+  @apply pt-16;
+}
+
+/* ================================
+   CUSTOM SCROLLBAR
+================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* tailwind gray-200 */
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* blue-500 */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* blue-600 */
+}
+
+/* ================================
+   SECTION HEADING STYLES
+================================ */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center text-blue-700 mb-10;
+}
+
+/* ================================
+   BUTTON GLOBAL STYLES
+================================ */
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition active:scale-95;
+}
+
+.btn-outline {
+  @apply border border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-50 transition active:scale-95;
+}
+
+.btn-green {
+  @apply bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 active:scale-95 transition;
+}
+
+/* ================================
+   INPUT + FORM FIELD STYLING
+================================ */
+.input-field {
+  @apply w-full border border-gray-300 p-3 rounded-md focus:outline-none 
+         focus:ring-2 focus:ring-blue-500 transition;
+}
+
+/* ================================
+   SECTION SPACING
+================================ */
+.section {
+  @apply py-16;
+}
+
+/* ================================
+   CARD SHARED STYLE
+================================ */
+.card {
+  @apply bg-white shadow rounded-xl p-6 hover:shadow-lg transition;
+}
+
+/* ================================
+   FAQ ACCORDION TRANSITIONS
+================================ */
+.accordion-content {
+  transition: max-height 0.4s ease, opacity 0.2s ease;
+}
+
+/* ================================
+   FLOATING ACTION BUTTON BASE
+================================ */
+.fab {
+  @apply bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition;
+}
+
+/* ================================
+   VIDEO PLAYER OVERRIDE
+================================ */
+video {
+  @apply rounded-lg;
+}
+
+/* ================================
+   RESPONSIVE UTILITIES
+================================ */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ================================
+   HERO TEXT SHADOW
+================================ */
+.text-glow {
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+
+.dropdown-link {
+  @apply block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition;
+}
+
+.mobile-link {
+  @apply block py-2 text-gray-700 hover:text-blue-600;
+}
+
+.mobile-sublink {
+  @apply block py-2 pl-4 text-gray-600 hover:text-blue-600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.97); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-scaleIn {
+  animation: scaleIn .25s ease-out;
+}
