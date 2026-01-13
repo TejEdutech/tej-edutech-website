@@ -125,7 +125,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 						<div className="space-y-4 pt-4">
 							{[
 								{ icon: Phone, label: "Call Us", value: "+91 63625 20959" },
-								{ icon: Mail, label: "Email Us", value: "admissions@tejedu.com" },
+								{ icon: Mail, label: "Email Us", value: "info@tejedutech.com" },
 								{ icon: MapPin, label: "HQ", value: "Ananthapur, AP" }
 							].map((item, index) => (
 								<div key={index} className="flex items-center gap-4 group cursor-default">

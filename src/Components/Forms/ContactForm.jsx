@@ -121,7 +121,7 @@ const ContactForm = () => {
               <div className="space-y-5">
                 {[
                     { icon: Phone, label: "Call Us", value: "+91 63625 20959" },
-                    { icon: Mail, label: "Email Us", value: "admissions@tejedu.com" },
+                    { icon: Mail, label: "Email Us", value: "info@tejedutech.com" },
                     { icon: MapPin, label: "Visit HQ", value: "Ananthapur, Andhra Pradesh" }
                 ].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 group cursor-default">
